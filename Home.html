@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <title>Inicio</title>
+  </head>
+  <body>
+     <!-- Code block starts -->
+     <dh-component>
+        <nav class="w-full border-b">
+            <div class="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
+                <div aria-label="" role="img">
+                   <img class="w-12 md:w-auto" src="img/vista-lateral-da-silhueta-da-borboleta-voltada-para-a-esquerda.png" alt=""/>
+                </div>
+                <div>
+                    <button onclick="toggleMenu(true)" class="dark:bg-white rounded sm:block md:hidden text-gray-500 hover:text-gray-700 dark:text-gray-200 focus:text-gray-700 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                        <svg aria-haspopup="true" aria-label="open Main Menu" xmlns="http://www.w3.org/2000/svg" class="md:hidden icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round">
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <line x1="4" y1="8" x2="20" y2="8"></line>
+                            <line x1="4" y1="16" x2="20" y2="16"></line>
+                        </svg>
+                    </button>
+                    <div id="menu" class="md:block lg:block hidden">
+                        <button onclick="toggleMenu(false)" class="dark:bg-white rounded block md:hidden lg:hidden text-gray-500 hover:text-gray-700 dark:text-gray-200 focus:text-gray-700 dark:text-gray-200 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 mt-6">
+                            <svg aria-label="close main menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                        <ul class="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
+                            <li class="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
+                                <a href="javascript: void(0)">Coleções</a>
+                            </li>
+                            <li class="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                                <a href="javascript: void(0)">Marcas</a>
+                            </li>
+                            <li class="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                                <a href="javascript: void(0)">Sobre Nós</a>
+                            </li>
+                            <li class="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                                <a href="javascript: void(0)">Parcerias</a>
+                            </li>
+                            <li class="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                                <a href="javascript: void(0)">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">Entrar</h1></button>
+            </div>
+        </nav>
+        <div class="2xl:container 2xl:mx-auto">
+            <div class="bg-gray-50 dark:bg-gray-900 text-center lg:py-10 md:py-8 py-6">
+                <h1 class="titulo-principal">Veja As Nossas Roupas </h1>
+            </div>
+            <div class="py-6 lg:px-20 md:px-6 px-4">
+                <p class="font-normal text-sm leading-3 text-gray-600 dark:text-gray-300">Inicio</p>
+                <hr class="w-full bg-gray-200 my-6" />
+    
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 justify-center items-center text-gray-800 dark:text-white">
+                        <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 7.5H20.25" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M3.75 12H20.25" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M3.75 16.5H20.25" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" />
+                        </svg>
+                        <p class="font-normal text-base leading-4 text-gray-800 dark:text-white"></p>
+                    </div>
+                    <p class="cursor-pointer hover:underline duration-100 font-normal text-base leading-4 text-gray-600 dark:text-gray-300"></p>
+                </div>
+    
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-y-12 lg:gap-x-8 sm:gap-y-10 sm:gap-x-6 gap-y-6 lg:mt-12 mt-10">
+                    <div class="relative">
+                        <div class="absolute top-0 left-0 py-2 px-4 bg-white bg-opacity-50"><p class="text-xs leading-3 text-gray-800"></p></div>
+                        <div class="relative group">
+                            <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+                            <img class="w-full" src="img/gucci.jpg" alt="" />
+                            <div class="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                                <button class="dark:bg-gray-800 dark:text-gray-300 font-medium text-base leading-4 text-gray-800 bg-white py-3 w-full"><a href="gucci.html">Adicionar ao carrinho</a></button>
+                               
+                            </div>
+                        </div>
+                        <p class="font-normal dark:text-white text-xl leading-5 text-gray-800 md:mt-6 mt-4">Moletom GUCCI</p>
+                        <p class="font-semibold dark:text-gray-300 text-xl leading-5 text-gray-800 mt-4">R$50,00</p>
+                        <p class="font-normal dark:text-white-300 text-base leading-4 text-white-600 mt-4">1 Cor</p>
+                    </div>
+                    <div class="relative">
+                        <!-- <div class="bg-white bg-opacity-50 absolute top-0 right-0 px-2 py-1"><p class="text-white fonr-normal text-base leading-4">XS , S , M , L</p></div> -->
+                        <div class="relative group">
+                            <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+                            <img class="w-full" src="img/Suéter Tommy Hilfiger.png" alt="" />
+                            <div class="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                                <button class="dark:bg-gray-800 dark:text-gray-300 font-medium text-base leading-4 text-gray-800 bg-white py-3 w-full"><a href="sueterTommy.html">Adicionar ao carrinho</a></button>
+                            </div>
+                        </div>
+                        <p class="font-normal dark:text-white text-xl leading-5 text-gray-800 md:mt-6 mt-4">Suéter Tommy</p>
+                        <p class="font-semibold dark:text-gray-300 text-xl leading-5 text-gray-800 mt-4">R$80,00</p>
+                        <p class="font-normal dark:text-white-300 text-base leading-4 text-white-600 mt-4">1 Cor</p>
+                    </div>
+                    <div>
+                        <div class="relative group">
+                            <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+                            <img class="w-full" src="img/polluover.jpg" alt="" />
+                            <div class="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                                <button class="dark:bg-gray-800 dark:text-gray-300 font-medium text-base leading-4 text-gray-800 bg-white py-3 w-full"><a href="Polluover.html">Adicionar ao carrinho</a></button>
+                              
+                                
+                            </div>
+                        </div>
+                        <p class="font-normal dark:text-white text-xl leading-5 text-gray-800 md:mt-6 mt-4">Pullover</p>
+                        <p class="font-semibold dark:text-gray-300 text-xl leading-5 text-gray-800 mt-4">R$150</p>
+                        <p class="font-normal dark:text-gray-300 text-base leading-4 text-gray-600 mt-4">2 Cores</p>
+                    </div>
+                    <div>
+                        <div class="relative group">
+                            <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+                            <img class="w-full" src="img/Jaqueta Puma x Nokia Vintage.jpg" alt="" />
+                            <div class="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                                <button class="dark:bg-gray-800 dark:text-gray-300 font-medium text-base leading-4 text-gray-800 bg-white py-3 w-full"><a href="JaquetaPuma.html">Adicionar ao carrinho</a></button>
+                              
+                            </div>
+                        </div>
+    
+                        <p class="font-normal text-xl dark:text-white leading-5 text-gray-800 md:mt-6 mt-4">Jaqueta Puma</p>
+                        <p class="font-semibold dark:text-gray-300 text-xl leading-5 text-gray-800 mt-4">R$180</p>
+                        <p class="font-normal dark:text-gray-300 text-base leading-4 text-gray-600 mt-4">1 Cor</p>
+                    </div>
+                    <div>
+                        <div class="relative group">
+                            <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+                            <img class="w-full" src="img/Calça de alfaiataria Vintage.jpg" alt="" />
+                            <div class="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                                <button class="dark:bg-gray-800 dark:text-gray-300 font-medium text-base leading-4 text-gray-800 bg-white py-3 w-full"><a href="alfaitaria.html">Adicionar ao carrinho</a></button>
+                              
+                            </div>
+                        </div>
+    
+                        <p class="font-normal dark:text-white text-xl leading-5 text-gray-800 md:mt-6 mt-4">Calça Alfaitaria</p>
+                        <p class="font-semibold dark:text-gray-300 text-xl leading-5 text-gray-800 mt-4">R$200</p>
+                        <p class="font-normal dark:text-gray-300 text-base leading-4 text-gray-600 mt-4">1 Cor</p>
+                    </div>
+                    <div>
+                        <div class="relative group">
+                            <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+                            <img class="w-full" src="img/calçajeans.jpg" alt="" />
+                            <div class="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                                <button class="dark:bg-gray-800 dark:text-gray-300 font-medium text-base leading-4 text-gray-800 bg-white py-3 w-full"><a href="JenasTommy.html">Adicionar ao carrinho</a></button>
+                               
+                            </div>
+                        </div>
+    
+                        <p class="font-normal dark:text-white text-xl leading-5 text-gray-800 md:mt-6 mt-4">Calça Jeans</p>
+                        <p class="font-semibold text-xl leading-5 text-gray-800 mt-4">R$90</p>
+                        <p class="font-normal dark:text-gray-300 text-base leading-4 text-gray-600 mt-4">1 Cor</p>
+                    </div>
+                    <div>
+                        <div class="relative group">
+                            <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+                            <img class="w-full" src="img/Colete Hugo Boss Vintage.jpg" alt="A girl wearing white suit posing in desert" />
+                            <div class="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                                <button class="dark:bg-gray-800 dark:text-gray-300 font-medium text-base leading-4 text-gray-800 bg-white py-3 w-full"><a href="Hugo.html">Adicionar ao carrinho</a></button>
+                                <p class="font-normal dark:text-gray-300 text-base leading-4 text-gray-600 mt-4">1 Cor</p>
+                            </div>
+                        </div>
+    
+                        <p class="font-normal dark:text-white text-xl leading-5 text-gray-800 md:mt-6 mt-4">Colete Hugo cor vintage</p>
+                        <p class="font-semibold dark:text-gray-300 text-xl leading-5 text-gray-800 mt-4">R$250</p>
+                    </div>
+                    <div>
+                        <div class="relative group">
+                            <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+                            <img class="w-full" src="Pullover vintage/Pullover vintage2.jpg" alt="Girl wearing pink suit posing" />
+                            <div class="absolute bottom-0 p-8 w-full opacity-0 group-hover:opacity-100">
+                                <button class="dark:bg-gray-800 dark:text-gray-300 font-medium text-base leading-4 text-gray-800 bg-white py-3 w-full"><a href="PoloNike.html">Adicionar ao carrinho</a></button>
+                            </div>
+                        </div>
+    
+                        <p class="font-normal dark:text-white text-xl leading-5 text-gray-800 md:mt-6 mt-4">POLO NIKE 00s </p>
+                        <p class="font-semibold dark:text-gray-300 text-xl leading-5 text-gray-800 mt-4">R$290</p>
+                    </div>
+                </div>
+    
+                <div class="flex justify-center items-center">
+                 
+                </div>
+            </div>
+        </div>
+    
+
+
+
+        <div class="pt-12">
+            <footer id="footer" class="relative z-50 dark:bg-gray-900">
+                <div tabindex="0" aria-label="footer" class="focus:outline-none border-t border-b border-gray-200 dark:border-gray-700 py-16">
+                    <div class="mx-auto container px-4 xl:px-12 2xl:px-4">
+                        <div class="lg:flex">
+                            <div class="w-full lg:w-1/2 mb-16 lg:mb-0 flex">
+                                <div class="w-full lg:w-1/2 px-6">
+                                    <ul>
+                                        <li><a class="focus:outline-none focus:underline  text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50" href="javascript:void(0)">Fretes</a></li>
+                                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50" href="javascript:void(0)"></a></li>
+                                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50" href="javascript:void(0)"></a></li>
+                                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50" href="javascript:void(0)">FAQ</a></li>
+                                        <li class="mt-6"><a href="javascript:void(0)" class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="w-full lg:w-1/2 px-6">
+                                    <ul>
+                                        <li><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50" href="javascript:void(0)"></a></li>
+                                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50" href="javascript:void(0)"></a></li>
+                                        <li class="mt-6"><a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50" href="javascript:void(0)"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-1/2 flex">
+                                <div class="w-full lg:w-1/2 px-6">
+                                    <ul>
+                                        <li><a href="javascript:void(0)" class="focus:underline focus:outline-none text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50">Politica de privacidade</a></li>
+                                        <li class="mt-6"><a class="focus:underline focus:outline-none text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50" href="javascript:void(0)">Termos de uso</a></li>
+                                    </ul>
+                                </div>
+                                <div class="w-full lg:w-1/2 px-6 flex flex-col justify-between">
+                                    <div class="flex items-center mb-6">
+                                        <a  aria-label="Github" href="javascript:void(0)">
+                                            <div class="text-gray-800 dark:text-gray-50 cursor-pointer hover:text-brand dark:hover:text-brand">
+                                               <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg1.svg" alt="Github">
+                                               <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg1dark.svg" alt="Github">
+                                            </div> </a
+                                        ><a aria-label="Twitter"  href="javascript:void(0)" class="ml-4">
+                                            <div class="">
+                                               <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg2.svg" alt="Twitter">
+                                               <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg2dark.svg" alt="Twitter">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="relative w-36">
+                                        <img id="auto" class="dark:hidden absolute inset-0 m-auto ml-3 text-gray-700 dark:text-gray-50 icon icon-tabler icon-tabler-device-laptop" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg3.svg" alt="auto">
+                                        <img id="auto" class="dark:block hidden absolute inset-0 m-auto ml-3 text-gray-700 dark:text-gray-50 icon icon-tabler icon-tabler-device-laptop" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg3dark.svg" alt="auto">
+                                        <img  id="light" class="dark:hidden hidden absolute inset-0 m-auto ml-3 text-gray-700 dark:text-gray-50 icon icon-tabler icon-tabler-brightness-up" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg4.svg" alt="light">
+                                        <img  id="light" class="dark:block hidden hidden absolute inset-0 m-auto ml-3 text-gray-700 dark:text-gray-50 icon icon-tabler icon-tabler-brightness-up" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg4dark.svg" alt="light">
+                                        <img id="dark" class="dark:hidden hidden absolute inset-0 m-auto ml-3 text-gray-700 dark:text-gray-50 icon icon-tabler icon-tabler-moon" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg5.svg" alt="dark">
+                                        <img id="dark" class="dark:block hidden hidden absolute inset-0 m-auto ml-3 text-gray-700 dark:text-gray-50 icon icon-tabler icon-tabler-moon" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg5dark.svg" alt="dark">
+                                        
+<!-- 
+                                       <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_1-svg6.svg" class="pointer-events-none absolute inset-0 m-auto mr-3 text-gray-700 dark:text-gray-50 icon icon-tabler icon-tabler-chevron-down" alt="dropdown"> -->
+                                        <!-- <select aria-label="select box" onchange="switchMode(event)" class="w-full focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none pl-10 py-2 appearance-none flex items-center h-12 border rounded border-gray-700 dark:border-gray-50 text-sm leading-5 dark:bg-gray-900 dark:text-gray-50">
+                                            <option selected="" value="auto">Auto</option>
+                                            <option value="light">Light</option>
+                                            <option value="dark">Dark</option> -->
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-16 flex flex-col justify-center items-center">
+                    <a class="focus:outline-none" tabindex="0" role="link" aria-label="home link" href="javascript:void(0)"
+                        >
+                        <img class="dark:hidden" src="img/vista-lateral-da-silhueta-da-borboleta-voltada-para-a-esquerda.png" alt="tuk logo">
+                        <img class="dark:block hidden" src="img/vista-lateral-da-silhueta-da-borboleta-voltada-para-a-esquerda.png" alt="tuk logo">
+                    </a>
+                    <p tabindex="0" class="focus:outline-none mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">2022 Todos os direitos reservados.</p>
+                </div>
+            </footer>
+
+            <script src='main.js'></script>
+  </body>
+</html>
